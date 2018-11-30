@@ -1,0 +1,13 @@
+#!/usr/bin/env php
+<?php
+
+require_once __DIR__ . '/../src/console_helper.php';
+require_once __DIR__ . '/../src/Person.php';
+
+$john = new Person();
+$john->username = 'John';
+writeln($john->username);
+
+$alisa = new Person();
+$alisa->username = 'Alisa123';
+writeln($alisa->username);

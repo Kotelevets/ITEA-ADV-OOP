@@ -5,9 +5,9 @@ require_once __DIR__ . '/../src/console_helper.php';
 require_once __DIR__ . '/../src/Person.php';
 
 $john = new Person();
-$john->username = 'John';
-writeln($john->username);
+$john->setUsername('John');
+writeln($john->getUsername());
 
 $alisa = new Person();
-$alisa->username = 'Alisa123';
-writeln($alisa->username);
+$alisa->setUsername('Alisa123');
+writeln($alisa->getUsername());
